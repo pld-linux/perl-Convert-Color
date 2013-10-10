@@ -8,13 +8,13 @@
 Summary:	Convert::Color - color space conversions and named lookups
 #Summary(pl.UTF-8):	
 Name:		perl-Convert-Color
-Version:	0.08
+Version:	0.09
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4be0690e0a0011e56a75f967ac9ab7df
+# Source0-md5:	0dce5e969e49130e2b44b929deba9090
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Convert-Color/
 BuildRequires:	perl-Module-Build
