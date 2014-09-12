@@ -9,7 +9,7 @@ Summary:	Convert::Color - color space conversions and named lookups
 #Summary(pl.UTF-8):	
 Name:		perl-Convert-Color
 Version:	0.10
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
