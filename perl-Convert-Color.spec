@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Convert
 %define		pnam	Color
 %include	/usr/lib/rpm/macros.perl
 Summary:	Convert::Color - color space conversions and named lookups
-#Summary(pl.UTF-8):	
 Name:		perl-Convert-Color
 Version:	0.10
 Release:	3
@@ -15,8 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7531a59e7c0c88ba47062fe7eabe18c8
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Convert-Color/
+URL:		http://search.cpan.org/dist/Convert-Color/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -27,24 +25,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module provides conversions between commonly used ways to express colors.
-It provides conversions between color spaces such as RGB and HSV, and it
-provides ways to look up colors by a name.
+This module provides conversions between commonly used ways to express
+colors. It provides conversions between color spaces such as RGB and
+HSV, and it provides ways to look up colors by a name.
 
-This class provides a base for subclasses which represent particular color
-values in particular spaces. The base class provides methods to represent the
-color in a few convenient forms, though subclasses may provide more specific
-details for the space in question.
+This class provides a base for subclasses which represent particular
+color values in particular spaces. The base class provides methods to
+represent the color in a few convenient forms, though subclasses may
+provide more specific details for the space in question.
 
 For more detail, read the documentation on these classes; namely:
 
-The following classes are subclasses of one of the above, which provide a way
-to access predefined colors by names:
-
-
-
-# %description -l pl.UTF-8
-# TODO
+The following classes are subclasses of one of the above, which
+provide a way to access predefined colors by names:
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
