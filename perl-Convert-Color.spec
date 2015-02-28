@@ -7,19 +7,20 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Convert::Color - color space conversions and named lookups
 Name:		perl-Convert-Color
-Version:	0.10
-Release:	3
+Version:	0.11
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7531a59e7c0c88ba47062fe7eabe18c8
+# Source0-md5:	5d4ec8b804100dca53c6c406f2a83f4c
 URL:		http://search.cpan.org/dist/Convert-Color/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(List::UtilsBy)
+BuildRequires:	perl-Test-Number-Delta
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
