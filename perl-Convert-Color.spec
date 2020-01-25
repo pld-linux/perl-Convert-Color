@@ -4,7 +4,6 @@
 
 %define		pdir	Convert
 %define		pnam	Color
-%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::Color - color space conversions and named lookups
 Name:		perl-Convert-Color
 Version:	0.11
