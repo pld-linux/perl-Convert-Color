@@ -6,13 +6,13 @@
 %define		pnam	Color
 Summary:	Convert::Color - color space conversions and named lookups
 Name:		perl-Convert-Color
-Version:	0.11
+Version:	0.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5d4ec8b804100dca53c6c406f2a83f4c
+# Source0-md5:	40f8822a1374c96c1aa173ff69c3bbb0
 URL:		http://search.cpan.org/dist/Convert-Color/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
